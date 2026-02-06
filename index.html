@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花卉訂購</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">花卉訂購</div>
+        <nav>
+            <a href="#products">花禮型錄</a>
+            <a href="#cart-section">我的清單</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>莊重 · 追思 · 圓滿</h1>
+        <p>為您傳遞最後的敬意，專業殯葬花籃配送</p>
+    </section>
+
+    <section id="products" class="container">
+        <h2>精選花禮</h2>
+        <div id="product-grid" class="product-grid">
+            </div>
+    </section>
+
+    <section id="order-section" class="container">
+        <h2>訂購資訊</h2>
+        <div class="form-container">
+            
+            <div id="cart-section">
+                <h3>🛒 您的選擇清單</h3>
+                <p class="hint">請確認下方商品與數量：</p>
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>品名</th>
+                            <th width="60">數量</th>
+                            <th>小計</th>
+                            <th width="50">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        </tbody>
+                    <tfoot>
+                        <tr class="cart-total-row">
+                            <td colspan="2" style="text-align: right;">總計：</td>
+                            <td colspan="2">NT$ <span id="cart-grand-total">0</span></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            
+            <hr>
+
+            <form id="orderForm">
+                <h3>配送詳情</h3>
+                <div class="form-group">
+                    <label>逝者姓名 (必填)</label>
+                    <input type="text" id="deceasedName" placeholder="例如：王小明 老先生" required>
+                </div>
+                <div class="form-group">
+                    <label>配送地點/殯儀館 (必填)</label>
+                    <input type="text" id="location" placeholder="例如：台北市第一殯儀館 懷德廳" required>
+                </div>
+                <div class="form-group">
+                    <label>送達時間</label>
+                    <input type="datetime-local" id="deliveryTime" required>
+                </div>
+
+                <h3>卡片內容</h3>
+                <div class="form-group">
+                    <label>上款 (敬悼)</label>
+                    <input type="text" id="cardTo">
+                </div>
+                <div class="form-group">
+                    <label>中款 (輓詞)</label>
+                    <input type="text" id="cardBody" value="音容宛在">
+                </div>
+                <div class="form-group">
+                    <label>下款 (敬輓者)</label>
+                    <input type="text" id="cardFrom" required>
+                </div>
+
+                <h3>聯絡人</h3>
+                <div class="form-group">
+                    <label>您的手機</label>
+                    <input type="tel" id="buyerPhone" required>
+                </div>
+
+                <button type="button" class="btn-line" onclick="sendToLine()">
+                    送出訂單 (跳轉 LINE)
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
