@@ -1,7 +1,7 @@
 // ==========================================
 // 設定區域 (請填入 Google Apps Script 網址)
 // ==========================================
-const API_URL = "https://script.google.com/macros/s/AKfycbyHzeaF8PUOp-fpi4oxA1IeGJOldW_32dFJerYeT_rArhrxDqh0034O7mo7cBDFyFmE/exec"; 
+const API_URL = "https://script.google.com/macros/s/AKfycbxgFZ1YqJxvWeLyMItIVfMkOJkdFsehigEQW_YCNU2A9cvQYZjJUTn5tx54I0waubD6/exec"; 
 // 例如: "https://script.google.com/macros/s/AKfycbx.../exec"
 
 // ==========================================
